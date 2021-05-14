@@ -48,9 +48,8 @@ public class ListaOds extends SuperClasse {
 	//
 	public void playOds() {
 		Collections.shuffle(ods);
-		System.out.println("");
-		System.out.println("");
-		System.err.println("O tema da ODS é: " + ods.get(1));
+		System.out.println("\n");
+		System.err.println("PROXIMO TEMA: " + ods.get(1));
 		System.out.println("");
 		System.out.println("");
 	}
@@ -61,13 +60,6 @@ public class ListaOds extends SuperClasse {
 
 	public void setOds(ArrayList<String> ods) {
 		this.ods = ods;
-	}
-
-	public void mostrar() {
-		for (int contador = 0; contador < 17; contador++) {
-			System.out.println(ods.get(contador));
-		}
-
 	}
 
 }

@@ -11,7 +11,7 @@ public class ListaSorteados extends SuperClasse implements CadastroInterface {
 
 	public void jaApresentado() {
 
-		String ods1 = "ERIKA";
+		String ods1 = "ERICA";
 		sorteio.add(ods1);
 		String ods2 = "GILSON";
 		sorteio.add(ods2);
@@ -25,7 +25,7 @@ public class ListaSorteados extends SuperClasse implements CadastroInterface {
 		sorteio.add(ods6);
 		String ods7 = "JACKELINE";
 		sorteio.add(ods7);
-		String ods8 = "BRABO";
+		String ods8 = "ISAQUE";
 		sorteio.add(ods8);
 		String ods9 = "DANILO";
 		sorteio.add(ods9);
@@ -64,7 +64,9 @@ public class ListaSorteados extends SuperClasse implements CadastroInterface {
 	public void ultimoTres() {
 		System.out.println("OS ULTIMOS A APRESENTAR FORAM:");
 		for (int contador = sorteio.size() - 1; contador > sorteio.size() - 4; contador--) {
+			System.out.println();
 			System.err.println(contador + " - " + sorteio.get(contador));
+			System.out.println();
 		}
 	}
 

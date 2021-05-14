@@ -21,7 +21,7 @@ public class Sorteio extends SuperClasse implements CadastroInterface {
 		System.out.println("QUANTAS PESSOAS VOCÊ QUER CADASTRAR?");
 		int pessoas = leia.nextInt();
 		for (int contador = 0; contador < pessoas; contador++) {
-			System.out.print("Nome: ");
+			System.out.print((contador+1) + "- NOME: ");
 			sorteio.add(contador, leia.next());
 		}
 		System.out.println("");

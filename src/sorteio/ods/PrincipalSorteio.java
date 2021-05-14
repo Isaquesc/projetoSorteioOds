@@ -6,7 +6,7 @@ public class PrincipalSorteio {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		ListaSorteados bbb = new ListaSorteados();
+		ListaSorteados listasorteados = new ListaSorteados();
 		Sorteio sorteio = new Sorteio();
 		SuperClasse pacotao = new SuperClasse();
 		Menu m = new Menu();
@@ -14,7 +14,7 @@ public class PrincipalSorteio {
 		Scanner leia = new Scanner(System.in);
 		
 		ods.listaCompleta();
-		bbb.jaApresentado();
+		listasorteados.jaApresentado();
 		m.primeiroAguarda();
 		
 		do {
@@ -37,7 +37,7 @@ public class PrincipalSorteio {
 				break;
 
 			case 4:
-				bbb.ultimoTres();
+				listasorteados.ultimoTres();
 				break;
 
 			case 5:

@@ -1,8 +1,9 @@
 package sorteio.ods;
 
-public interface Cadastro {
-	
+public interface CadastroInterface {
+
 	public void cadastro();
+
 	public void menu();
-	
+
 }

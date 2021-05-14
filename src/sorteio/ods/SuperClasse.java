@@ -1,6 +1,6 @@
 package sorteio.ods;
 
-public class Pacotao {
+public class SuperClasse {
 
 	private int opcao;
 

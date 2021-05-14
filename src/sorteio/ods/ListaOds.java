@@ -2,10 +2,9 @@ package sorteio.ods;
 
 import java.util.*;
 
-public class ListaOds extends Pacotao {
+public class ListaOds extends SuperClasse {
 
 	public ArrayList<String> ods = new ArrayList<>();
-	
 
 	public void listaCompleta() {
 
@@ -17,7 +16,7 @@ public class ListaOds extends Pacotao {
 		ods.add(ods3);
 		String ods4 = "Educação de qualidade";
 		ods.add(ods4);
-		/*String ods5 = "Igualdade de Gênero";
+		String ods5 = "Igualdade de Gênero";
 		ods.add(ods5);
 		String ods6 = "Água potável e Saneamento";
 		ods.add(ods6);
@@ -42,15 +41,20 @@ public class ListaOds extends Pacotao {
 		String ods16 = "Paz, justiça e intituições eficazes";
 		ods.add(ods16);
 		String ods17 = "Parcerias e meios de implementação";
-		ods.add(ods17);*/
+		ods.add(ods17);
 
 	}
-	
+
+	//
 	public void playOds() {
 		Collections.shuffle(ods);
-		System.out.println(ods.get(1));
+		System.out.println("");
+		System.out.println("");
+		System.err.println("O tema da ODS é: " + ods.get(1));
+		System.out.println("");
+		System.out.println("");
 	}
- 
+
 	public ArrayList<String> getOds() {
 		return ods;
 	}

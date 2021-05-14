@@ -4,42 +4,54 @@ import java.util.Scanner;
 
 public class PrincipalSorteio {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
-		Exbbb bbb = new Exbbb();
+		ListaSorteados bbb = new ListaSorteados();
 		Sorteio sorteio = new Sorteio();
-		Pacotao pacotao = new Pacotao();
+		SuperClasse pacotao = new SuperClasse();
 		Menu m = new Menu();
 		ListaOds ods = new ListaOds();
 		Scanner leia = new Scanner(System.in);
 		
 		ods.listaCompleta();
-
+		bbb.jaApresentado();
+		m.primeiroAguarda();
+		
 		do {
 			m.menu();
 			pacotao.setOpcao(leia.nextInt());
 			switch (pacotao.getOpcao()) {
+			
 			case 1:
 				sorteio.cadastro();
 				break;
-
+				
 			case 2:
-				sorteio.playSorteio();
+				m.Sorteando();
 				ods.playOds();
 				break;
 
 			case 3:
-				bbb.ultimoTres();
+				m.Sorteando();
+				sorteio.playSorteio();
 				break;
 
 			case 4:
-				System.out.println("FIM DO PROGRAMA");
+				bbb.ultimoTres();
+				break;
+
+			case 5:
+				m.saindo();
+				System.out.println();
+				System.out.println("\nFIM DO PROGRAMA");
 				break;
 
 			default:
-				System.out.println("OPCAO INVALIDA!");
-
+				System.out.println("");
+				System.err.println("OPÇÃO INVALIDA!");
+				System.out.println("");
+				break;
 			}// switch
-		} while (pacotao.getOpcao() != 4);
+		} while (pacotao.getOpcao() != 5);
 	}
 }

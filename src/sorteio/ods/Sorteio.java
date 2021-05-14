@@ -1,46 +1,42 @@
 package sorteio.ods;
 
-import java.util.Scanner;
-
-import javax.swing.JOptionPane;
+import java.util.*;
 
 public class Sorteio extends Pacotao implements Cadastro {
 
+	ArrayList<String> sorteio = new ArrayList<>();
 	
-	private String [] sorteio = new String[5];
-	
+
 	Scanner leia = new Scanner(System.in);
 
-	public String[] getSorteio() {
+	public ArrayList<String> getSorteio() {
 		return sorteio;
 	}
 
-	public void setSorteio(String[] sorteio) {
+	public void setSorteio(ArrayList<String> sorteio) {
 		this.sorteio = sorteio;
 	}
-	
-	@Override
+
+	// CADASTRAR PESSOAS
 	public void cadastro() {
-		
-		for(int contador = 0;contador<sorteio.length;contador++) {
-			//System.out.print((contador+1) + " - NOME: ");
-			//sorteio[contador] = leia.next();
-			sorteio [contador] = JOptionPane.showInputDialog("DIGITE UM NOME: ");
-			}//for
-		}//cadastro
-	
-	public void quem() {
-		setResultado((int)(Math.random()*sorteio.length));
-	}
-	
-	public void anunciando() {
-		JOptionPane.showMessageDialog(null,"PARABENS " + sorteio[getResultado()]);
-		//System.out.println("PARABENS " + sorteio[getResultado()]);
+		System.out.println("Quantas pessoas você quer cadastrar?");
+		int pessoas = leia.nextInt();
+		for (int contador = 0; contador < pessoas; contador++) {
+			System.out.print("Nome: ");
+			sorteio.add(contador, leia.next());
+		}
+		System.out.println("CADASTRADO COM SUCESSO");
 	}
 
-	
+	public void playSorteio() {
+
+		Collections.shuffle(sorteio);
+		System.out.println(sorteio.get(1));
+
+	}
+
 	@Override
 	public void menu() {
-		
+
 	}
 }

@@ -7,42 +7,23 @@ public class ListaOds extends SuperClasse {
 	public ArrayList<String> ods = new ArrayList<>();
 
 	public void listaCompleta() {
-
-		String ods1 = "Erradicação da probleza";
-		ods.add(ods1);
-		String ods2 = "Fome zero e agricultura sustentável";
-		ods.add(ods2);
-		String ods3 = "Saúde e Bem-estar";
-		ods.add(ods3);
-		String ods4 = "Educação de qualidade";
-		ods.add(ods4);
-		String ods5 = "Igualdade de Gênero";
-		ods.add(ods5);
-		String ods6 = "Água potável e Saneamento";
-		ods.add(ods6);
-		String ods7 = "Energia Acessivel e Limpa";
-		ods.add(ods7);
-		String ods8 = "Trabalho decente e crescimento econômico";
-		ods.add(ods8);
-		String ods9 = "Indústria, Inovação e Infra-estrutra";
-		ods.add(ods9);
-		String ods10 = "Redução das desigualdades";
-		ods.add(ods10);
-		String ods11 = "Cidades e comunidades sustentáveis";
-		ods.add(ods11);
-		String ods12 = "Consumo e produção responsáveis";
-		ods.add(ods12);
-		String ods13 = "Ação contra a mudança global do clima";
-		ods.add(ods13);
-		String ods14 = "Vida na água";
-		ods.add(ods14);
-		String ods15 = "Vida terrestre";
-		ods.add(ods15);
-		String ods16 = "Paz, justiça e intituições eficazes";
-		ods.add(ods16);
-		String ods17 = "Parcerias e meios de implementação";
-		ods.add(ods17);
-
+		ods.add("Erradicacao da probleza");
+		ods.add("Fome zero e agricultura sustentavel");
+		ods.add("Saude e Bem-estar");
+		ods.add("Educacao de qualidade");
+		ods.add("Igualdade de Genero");
+		ods.add("agua potavel e Saneamento");
+		ods.add("Energia Acessivel e Limpa");
+		ods.add("Trabalho decente e crescimento economico");
+		ods.add("Industria, Inovacao e Infra-estrutra");
+		ods.add("Reducao das desigualdades");
+		ods.add("Cidades e comunidades sustentaveis");
+		ods.add("Consumo e producao responsaveis");
+		ods.add("Acao contra a mudanï¿½a global do clima");
+		ods.add("Vida na agua");
+		ods.add("Vida terrestre");
+		ods.add("Paz, justica e intituicoees eficazes");
+		ods.add("Parcerias e meios de implementacao");
 	}
 
 	//
